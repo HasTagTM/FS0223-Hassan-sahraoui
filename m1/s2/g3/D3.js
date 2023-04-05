@@ -122,7 +122,20 @@ function carrello(){
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
+let totalShoppingCart= prompt('Quanto è il totale in euro del tuo carrello?');
+let freeShipping = 50;
+let twenty = totalShoppingCart * 0.8
 
+function carrello(){
+    if (twenty >= 50){
+    document.write('La tua spedizione è gratuita')
+    }
+
+
+      document.write(Aggiungi ${Math.abs(freeShipping - twenty)} per ottenere la spedizione gratuita. Il totale che spenderai è ${twenty})
+
+  }
+  carrello();
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
