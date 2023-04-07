@@ -16,16 +16,16 @@
 
     var fiat = autoitaliana;
 
-    if(fiat == audi){
+    if(fiat = audi){
      console.log('auto tedesca')
     }
-    if(fiat == mercedes){
+    if(fiat = mercedes){
      console.log('auto tedesca')
     }
-    if(fiat == autoitaliana){
+    if(fiat = autoitaliana){
      console.log('auto italiana')
     }
-    else if(fiat == citroen){
+    else if(fiat = citroen){
      console.log('auto francese')
     }
 
@@ -38,10 +38,10 @@
 
     var animalePreferito = tigre
 
-    if(animalePreferito == leone){
+    if(animalePreferito = leone){
      console.log(errato)
     }
-    else if(animalePreferito == tigre){
+    else if(animalePreferito = tigre){
      console.log('corretto')
     }
 

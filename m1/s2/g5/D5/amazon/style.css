@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#logo{
+    background-color: #104050;
+}
+
+#logo img{
+   width:10%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+#button{
+    display: flex;
+    flex-direction: row;
+    background-color: #105060;
+    height: 530x;
+}
+
+button{
+    background-color: #105060;
+    border: 0px solid #105060;
+    height: 40px;
+
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+#giftcard{
+    background-color: #D06020;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+   
+
+}
+
+#giftcard h4{
+    padding-top: 15px;
+    font-size: larger;
+    color: white;
+}
+
+#titolo{
+    background-image: url(assets/bg-image.png);
+    background-size: cover;
+    text-align: center; 
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+#titolo h3{
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+
+
+
+#immagini{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    margin-top: 10px;
+   
+    
+}
+
+.img1{
+    width: 20%;
+    text-align: center;
+    margin: 5 px;
+   
+}
+
+#immagini3,#immagini2{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#footer{
+    background-color: #105060;
+    text-align: center;
+    height: 100px;
+}
+
+footer h3{
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    color: white;
+    padding-top: px;    
+}
+footer a{
+    color: white;
+}
+
+#lastlogo{
+    background-color: #104050;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#lastlogo img{
+    width: 20%;
+}
+
+  
