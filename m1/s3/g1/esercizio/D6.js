@@ -101,12 +101,10 @@ console.log(reverseString('EPICODE'));
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-// function upperFirst(str3){
-//     return str3.split("").uppercaseFirst(1).join("");
-// }
-
-// console.log(upperFirst("io mi chiamo hassan"));
-
+function upperFirst(str3){
+    return str3.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+}
+console.log(upperFirst("io mi chiamo hassan"));
 
 
 /* ESERCIZIO 9
