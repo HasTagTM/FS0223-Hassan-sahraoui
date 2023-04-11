@@ -359,40 +359,28 @@
 
 // terza settimana
 
-//funzioni:
-
-// function prova (){
-//     console.log('invocata');
-// }
-
-// prova()
-
-// function prova(){
-//     return 'dato restituito'
-// }
-
-// console.log(prova())
-
-// function somma1(){
-//     return 2 + 3;
-// }
-
-// console.log(somma1);
-
-
-// function somma(a,b){
-//     return a + b;
-// }
-
-// console.log(somma(5,2));
-
-
-// function somma3(a = 0 , b = 0 , c = 0){
-// return a + b + c;
-// }
-
-// let risult4 = somma3(2 , 3)
-// console.log('il risultato n 4 e pari a ' + risult4);
+funzioni:
+ function prova (){
+     console.log('invocata');
+ }
+ prova()
+ function prova(){
+     return 'dato restituito'
+ }
+ console.log(prova())
+ function somma1(){
+     return 2 + 3;
+ }
+ console.log(somma1);
+ function somma(a,b){
+     return a + b;
+ }
+ console.log(somma(5,2));
+ function somma3(a = 0 , b = 0 , c = 0){
+ return a + b + c;
+ }
+ let risult4 = somma3(2 , 3)
+ console.log('il risultato n 4 e pari a ' + risult4);
 
 function scrivi(){
     let testo = document.getElementById('testo');
@@ -402,3 +390,6 @@ function scrivi(){
 scrivi('hello world');
 scrivi('<br>');
 scrivi('ciao mondo');
+
+
+function provaPro
