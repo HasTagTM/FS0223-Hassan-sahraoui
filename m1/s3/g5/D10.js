@@ -263,7 +263,7 @@ console.log(result4);
 */
 
 function whatDayIsIt(){
-  var giorni = ['Domenica','Martedi','Mercoledi','Giovedi','Venerdi', 'Sabato', 'Lunedì'];
+  var giorni = ['Domenica','Lunedì','Martedi','Mercoledi','Giovedi','Venerdi', 'Sabato', ];
   var oggi = new Date();
   var ogg = giorni[oggi.getDay()];
   return ogg;
