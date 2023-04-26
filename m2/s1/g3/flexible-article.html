@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible article</title>
+    <style>
+        #container{
+            
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: aqua;
+            color: rgb(66, 23, 23);
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @media screen and (min-width: 700px){
+            #container{
+                display: flex;
+                flex-direction: row;
+                height: 410px;
+            }
+            #main{
+                order: 1;
+            }
+            img{
+                width: 350px;
+                height: 400px;
+            }
+            p,h1{
+                margin-left: 10px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="main">
+                <h1>Our delicious honey</h1> 
+                <p> 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dicta
+                    labore aut aliquam pariatur. 
+                    Exercitationem aperiam aspernatur libero tempora reprehenderit, dig
+                    nissimos, quos reiciendis ducimus officia hic velit commodi qui ipsa.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+                    tempora saepe sit 
+                    maxime at expedita quod, quia dolore exercitationem, aliquid officia neque
+                    placeat quidem corrupti? Assumenda, illum ut. Cupiditate, debitis.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusa
+                    ntium eius sapiente nesciunt, 
+                    
+            </p>
+            </div>
+            <img src="/assets/imgs/honey.jpg" alt="immagine principale">
+        </div>
+    </main>
+</body>
+</html>
