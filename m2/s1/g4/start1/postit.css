@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body{
+    line-height: 2;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    
+}
+.main-content{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 250px;
+    height: 150px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8em;
+    padding: 15px;
+    box-shadow: 2px 2px 2px 1px;
+    margin: 20px;
+}
+
+
+.box-1{
+    transform: rotate(-7deg);
+    transition: all 0.5s linear;
+    background-color: cadetblue;
+}
+.box-2{
+    transform: rotate(+7deg);
+    transition: all 0.5s linear;
+    background-color: chocolate;
+}
+.box-3{
+    transform: rotate(-7deg);
+    transition: all 0.5s linear;
+    background-color: darkkhaki;
+}
+.box-4{
+    transform: rotate(+8deg);
+    transition: all 0.5s linear;
+    background-color: azure;
+}
+.box-5{
+    transform: rotate(-7deg);
+    transition: all 0.5s linear;
+    background-color: deeppink;
+}
+.box-6{
+    transform: rotate(+6deg);
+    transition: all 0.5s linear;
+    background-color: darkseagreen;
+}
+.box-7{
+    transform: rotate(-7deg);
+    transition: all 0.5s linear;
+    background-color: bisque;
+}
+.box-8{
+    transform: rotate(+7deg);
+    transition: all 0.5s linear;
+    background-color: grey;
+}
+
+.box-1:hover,.box-2:hover,.box-3:hover,.box-4:hover,.box-5:hover,.box-6:hover,.box-7:hover,.box-8:hover{
+    background-color: lemonchiffon;
+    transform: scale(1.3);
+    z-index: 2;
+}

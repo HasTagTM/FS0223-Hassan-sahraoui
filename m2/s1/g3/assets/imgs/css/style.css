@@ -135,3 +135,18 @@ h4{
         position: relative;
     }
  }
+
+ @media screen and (min-width: 400px) and (max-width: 699px){
+    ul{
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #header-content{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+ }

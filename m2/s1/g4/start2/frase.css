@@ -1,0 +1,84 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testoAlternato{
+    height: 80vh;
+    width: 90%;
+    margin: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 234, 234);
+    border: 3px solid black;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+span .parole{
+    opacity: 0;
+    position: absolute;
+    top: 291px;
+    left: 616px;
+    right: 0;
+    bottom: 0;
+     transition: opacity 0.5s ease-in-out;
+}
+.interface:hover{
+    animation: fadeIn 0.5s ease-in-out 5s 1 normal forwards;
+   
+}
+.singlePage:hover{
+    animation: fadeIn 0.5s ease-in-out 5s 1 normal forwards;
+    
+}
+.nativeApp:hover{
+    animation: fadeIn 0.5s ease-in-out 5s 1 normal forwards;
+    
+    
+}
+
+
+@keyframes fadeIn{
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate(-10px);      
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+.word-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  .word-container input[type="radio"]:checked + .parole + .parole + .word-container .current-word {
+    opacity: 0;
+  }
+  .word-container input[type="radio"]:checked + .parole + .parole + .word-container .current-word {
+    opacity: 1;
+  }
