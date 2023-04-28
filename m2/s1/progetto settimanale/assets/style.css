@@ -1,0 +1,248 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+/*INIZIO HEADER*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc017;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-bottom: 1px solid black;
+    position: sticky ;
+    top: 0;
+    z-index: 2;
+}
+
+
+
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1em;
+    padding: 15px;
+    
+}
+ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #191919;
+}
+
+.btn{
+    background-color: #191919;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*!FINE DEL NAV PRINCIPALE*/
+
+
+/*INIZIO HEADER*/
+
+#heder-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    
+    background-color: #ffc017;
+    font-family: 'Roboto', sans-serif;
+    height: 450px;
+    border-bottom: 1px solid black;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 600px;
+    padding-left: 70px;
+}
+h1{
+    font-size:4em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.btn1{
+    background-color: #191919;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-top: 40px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/*MAIN*/
+
+h1,h2,h3,h4,h5{
+    font-weight: bold;
+}
+#section-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+    padding: 50px;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 210, 210);
+    
+}
+section{
+    display: flex;
+    font-size: 1em;
+    height: 200px;
+    width: 350px;
+    justify-content: center;
+    margin: 5px;
+    
+}
+
+.star1{
+    position: relative;
+    top: -21px;
+    left: 140px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: -45px;
+}
+
+.section1 p{
+    position: absolute;
+    bottom: 46px;
+    left: -2px;
+    font-size: 1.3em;
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 22px;
+    margin-left: 30px;
+}
+.section2 img{
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+.section2 p{
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+main h2{
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+/*fine section*/
+
+
+/*inizio main principale*/
+
+.container-box{
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+    margin-top: 70px;
+    justify-content: center;
+    color: rgb(99, 134, 134);
+}
+.img1{
+    width: 300px;
+    
+}
+.box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: rgb(99, 134, 134);
+}
+
+.btn0{
+    background-color: lightblue;
+    color: rgb(99, 134, 134);
+    border-radius: 100%;
+     
+}
+.content-box{
+
+}
+
+.mod-h3{
+    position: relative;
+    right: -46px;
+    top: -13px;
+    color: #191919;
+}
+.btn0:hover{
+    background-color: rgb(101, 209, 209);
+}
+
+.Contentsection2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 100px;
+    padding-right: 50px;
+    
+    
+}
+aside ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bottoni{
+    background-color: rgb(218, 231, 236);
+    border-radius: 50px;
+    border: 0px;
+    padding: 10px;
+    margin: 10px;
+}
+#button{
+    border-bottom: 1px solid rgb(101, 209, 209);
+    padding-bottom: 50px;
+}
+
+.bottoni:hover{
+    background-color: aquamarine;
+}
+
+

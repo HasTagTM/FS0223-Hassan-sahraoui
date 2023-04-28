@@ -38,47 +38,73 @@ section{
 
 .box-1{
     transform: rotate(-7deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: cadetblue;
+    animation: splatAnimation 1s linear 0.5s backwards ;
 }
 .box-2{
     transform: rotate(+7deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: chocolate;
+    animation: splatAnimation 1s linear 1s backwards ;
 }
 .box-3{
     transform: rotate(-7deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: darkkhaki;
+    animation: splatAnimation 1s linear 1.5s backwards ;
 }
 .box-4{
     transform: rotate(+8deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: azure;
+    animation: splatAnimation 1s linear 2s backwards ;
 }
 .box-5{
     transform: rotate(-7deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: deeppink;
+    animation: splatAnimation 1s linear 2.5s backwards ;
 }
 .box-6{
     transform: rotate(+6deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: darkseagreen;
+    animation: splatAnimation 1s linear 3s backwards ;
 }
 .box-7{
     transform: rotate(-7deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: bisque;
+    animation: splatAnimation 1s linear 3.5s backwards ;
 }
 .box-8{
     transform: rotate(+7deg);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     background-color: grey;
+    animation: splatAnimation 1s linear 4s backwards ;
 }
 
 .box-1:hover,.box-2:hover,.box-3:hover,.box-4:hover,.box-5:hover,.box-6:hover,.box-7:hover,.box-8:hover{
     background-color: lemonchiffon;
     transform: scale(1.3);
     z-index: 2;
+}
+
+@keyframes splatAnimation{
+    0%{
+        scale: 3;
+        opacity: 0;
+        rotate: 1000deg;
+        
+    }
+    50%{
+        scale: 0.5;
+        rotate: 50deg;
+        
+    }
+    100%{
+        scale: 1;
+        
+    }
 }
