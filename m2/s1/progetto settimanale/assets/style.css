@@ -21,6 +21,7 @@ nav{
     position: sticky ;
     top: 0;
     z-index: 2;
+    animation:
 }
 
 
@@ -176,6 +177,7 @@ main h2{
     margin-top: 70px;
     justify-content: center;
     color: rgb(99, 134, 134);
+   
 }
 .img1{
     width: 300px;
@@ -196,9 +198,9 @@ main h2{
     border-radius: 100%;
      
 }
-.content-box{
 
-}
+    
+
 
 .mod-h3{
     position: relative;
@@ -228,13 +230,26 @@ aside{
 aside ul{
     display: flex;
     flex-wrap: wrap;
+    position: sticky;
+    top: 396px;
 }
+
+#button{
+    position: sticky;
+    top: 158px;
+}
+#title-scroll{
+    position: sticky;
+    top: 141px;
+}
+
 .bottoni{
     background-color: rgb(218, 231, 236);
     border-radius: 50px;
     border: 0px;
     padding: 10px;
     margin: 10px;
+    
 }
 #button{
     border-bottom: 1px solid rgb(101, 209, 209);
@@ -244,5 +259,7 @@ aside ul{
 .bottoni:hover{
     background-color: aquamarine;
 }
+
+
 
 
