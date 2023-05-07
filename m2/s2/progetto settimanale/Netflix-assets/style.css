@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    color: white;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.navbar-brand img {
+    width: 100px;
+  }
+
+nav{
+    background-image: url(https://hd2.tudocdn.net/1073295?w=824&h=494);
+    background-size: cover;
+    opacity: 1;
+    background-color: black;
+    
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+  .avatar img{
+    width: 40px;
+    height: 35px;
+    background-size: cover;
+    position: relative;
+    top: -3px;
+    right: 5px;
+  }
+
+  .img-avatar{
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    nav{
+        background-image: none;
+        background-color: black;
+    }
+    nav{
+        position: fixed !important;
+        top: 0;
+    }
+    main{
+        margin-top: 300px;
+        
+    }
+    body{
+        background-image: url(https://damcinema.it/wp-content/uploads/2019/01/film-in-uscita-2019.png);
+        background-repeat: repeat-x;
+    }
+  }
+  .avatar-1{
+    width: 40px;
+    height: 35px;
+  }
+  #sezioni{
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  
+  #sezioni::-webkit-scrollbar{
+    display: none;
+  }
+
+.posters:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    footer{
+        margin-bottom: ;
+        background-color: black;
+        width: 100%;
+    }
+    .icone{
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+
+    }
+    .carousel1{
+        margin-bottom: 250px;
+    }
+    .footer-end{
+        padding-left: 20px;
+        
+    }
+    
+}
+footer{
+    background-color: black;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer ul li{
+    list-style: none;
+    color: rgb(83, 78, 69)
+}
+
+.icone{
+    margin-left: 43px;
+    width: 50px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+   
+}
+
+.btn-footer{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-end{
+    margin-left: 140px;
+}
+

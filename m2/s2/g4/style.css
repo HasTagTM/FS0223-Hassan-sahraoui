@@ -12,4 +12,19 @@ nav li {
 nav img {
   width: 50px;
   border-radius: 100%;
+}
+
+.btn-blue {
+  background-color: #0e6cff;
+  color: #f4f4f4;
+}
+
+.btn-orange {
+  background-color: #ff8700;
+  color: #f4f4f4;
+}
+
+.btn-green {
+  background-color: #4caf50;
+  color: #f4f4f4;
 }/*# sourceMappingURL=style.css.map */
