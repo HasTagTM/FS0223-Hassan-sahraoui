@@ -1,6 +1,4 @@
-let clicked = (scarta =>{
-    
-})
+
 
 fetch("https://striveschool-api.herokuapp.com/books")
   .then((res) => {
@@ -23,7 +21,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
             <div class="card-body">
             <h5 class="card-title">${photo.title}</h5>
             <p class="card-text">${photo.price}</p>
-            <a href="#" class="btn btn-primary">ADD CART</a>
+            <a href="#" class="btn btn-primary">compra ora!!</a>
             <button class= "btn btn-danger myButton"> SCARTA</button>
             </div>
             </div>`;
@@ -31,37 +29,27 @@ fetch("https://striveschool-api.herokuapp.com/books")
 
             let Bottone = creaCols.querySelectorAll(".myButton");
             Bottone.forEach((button)=>{
-                button.addEventListener("click", function(){
+                button.addEventListener("click", ()=>{
                     let card = button.closest(".card")
-                    card.innerHTML = ""
+                    card.innerHTML = card.remove()
+                    //closest('card').remove
                 })
             })    
             
-            let cartShopping = document.querySelectorAll(".add-cart");
+            let cartShopping = document.querySelectorAll(".btn-primary");
+            let i = []
             cartShopping.forEach((button) => {
                 button.addEventListener("click" , () =>{
                     let lista = document.querySelectorAll('ul')
-                    let listem = document.createElement('li')
+                    let listaLi = document.createElement('li')
+                    i.push(cartShopping)
+                    localStorage.setItem('movie' , i)
+                    lista.appendChild(listaLi)
                 })
                 
 
             })
     });
-  });
+ 
 
-  
-
-//   const cart = document.querySelector(".cart");
-//   const addBut = bookItem.querySelectorAll(".addToCart");
-//   addBut.forEach((button) => {
-//     button.addEventListener("click", function () {
-//       const card = this.closest(".card");
-//       const listItem = document.createElement("li");
-//       listItem.classList.add("d-flex", "flex-column");
-//       listItem.innerHTML = 
-//       <p>${book.title}</p>
-//       <p>${book.price}</p>
-//       ;
-//       cart.appendChild(listItem);
-//     });
-//   });
+})
