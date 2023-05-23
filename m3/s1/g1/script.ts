@@ -1,5 +1,5 @@
 let vincitore = document.querySelector('#vincitore')
-const VICTORY:any = function(num1:number , num2:number){
+const VICTORY:Function = function(num1:number , num2:number){
     let numeroCasuale:number = Math.floor(Math.random() * 99 + 1);
     let diff1:number = Math.abs(numeroCasuale - num1);
     let diff2:number = Math.abs(numeroCasuale - num2);
