@@ -38,4 +38,8 @@ motherAccount.addInterest()
 console.log('il saldo della madre più gli interessi è pari a :' ,motherAccount.balanceInit);
 
 
-  
+function ù(selector:string):HTMLElement|null{
+    return document.querySelector(selector)
+}
+
+ù('#container')?.style.color
