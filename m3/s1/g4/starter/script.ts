@@ -1,46 +1,32 @@
 class CapoAbbigliamento{
-    id: number
-    codprod: number
-    collezione: string
-    capo: string
-    modello: number
-    quantita: number
-    colore: string
-    prezzoivaesclusa: number
-    prezzoivainclusa: number
-    disponibile: string
-    saldo: number
+    id?: number
+    codprod?: number
+    collezione?: string
+    capo?: string
+    modello?: number
+    quantita?: number
+    colore?: string
+    prezzoivaesclusa?: number
+    prezzoivainclusa?: number
+    disponibile?: string
+    saldo?: number
 
-    constructor(id: number,
-        codprod: number,
-        collezione: string,
-        capo: string,
-        modello: number,
-        quantita: number,
-        colore: string,
-        prezzoivaesclusa: number,
-        prezzoivainclusa: number,
-        disponibile: string,
-        saldo: number){
-            this.id = id
-            this.codprod = codprod
-            this.collezione = collezione
-            this.capo = capo
-            this.modello = modello
-            this.quantita = quantita
-            this.colore = colore
-            this.prezzoivaesclusa = prezzoivaesclusa
-            this.prezzoivainclusa = prezzoivainclusa
-            this.disponibile = disponibile
-            this.saldo = saldo
+    constructor(obj:any){
+            this.id = obj.id
+            this.codprod = obj.codprod
+            this.collezione = obj.collezione
+            this.capo = obj.capo
+            this.modello = obj.modello
+            this.quantita = obj.quantita
+            this.colore = obj.colore
+            this.prezzoivaesclusa = obj.prezzoivaesclusa
+            this.prezzoivainclusa = obj.prezzoivainclusa
+            this.disponibile = obj.disponibile
+            this.saldo = obj.saldo
         }
 
-        getSaldoCapo(saldoSottrattore:number){
-            return this.saldo - saldoSottrattore
-        }
-
-        getAcquistoCapo(){
-            return this.prezzoivainclusa
+        mostraPrezzo(): string {
+            return this.saldo + '€'
         }
         
   
@@ -48,32 +34,19 @@ class CapoAbbigliamento{
 
 
 
-function fetchAbbigliamento(): Promise<void> {
-    return fetch('Abbigliamento.json')
-    .then((res)=>{
-        if(res.ok){
-            console.log(res);
-            return res.json() as Promise<CapoAbbigliamento[]>;
-            
-        }else{
-            throw new Error('errore nella richiesta della fetch')
-        }
-    })
-    .then(data=>{
-        data.forEach(capo=>{
-            
-            capo.getSaldoCapo(10)
-            console.log(capo.getSaldoCapo);
-            
-        })
-    })
-    .catch(error =>{
-        console.log(error, 'errore nella richiesta');
-        
-    })
-    
+async function call() {
+
+    let chiamata = await fetch('Abbigliamento.json');
+
+    let dati:CapoAbbigliamento[] = await chiamata.json();
+    let arr: CapoAbbigliamento[] = [];
+
+    dati.forEach((c: CapoAbbigliamento) => {
+        arr.push(new CapoAbbigliamento(c));
+    });
+
+
+    console.log(arr, arr[0].mostraPrezzo());
 }
 
-fetchAbbigliamento()
-
-// NON FUNZIONA!!! E NON SO COME FARLO FUNZIONARE! :(
+call()
