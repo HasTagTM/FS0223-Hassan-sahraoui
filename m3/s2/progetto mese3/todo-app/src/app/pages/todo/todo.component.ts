@@ -50,10 +50,11 @@ export class TodoComponent implements OnInit{
     if (id !== undefined) {
       this.todosSvc.deleteTodo(id).then(res => {
         console.log('Todo eliminato');
-
+        this.todoArray = this.todoArray.filter(todo => todo.id);
       });
     }
   }
+
 
 
   updateCompletedStatus() {
