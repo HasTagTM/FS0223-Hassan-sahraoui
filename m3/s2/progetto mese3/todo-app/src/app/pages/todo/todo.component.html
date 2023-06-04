@@ -1,0 +1,30 @@
+<body>
+  <div *ngIf="loading">caricamento Task...</div>
+  <div *ngIf="todoArray.length === 0 && !loading">non ci sono Task</div>
+  <table>
+    <tr *ngFor="let todo of todoArray">
+      <td>
+
+          {{ todo.title }}
+
+      </td>
+
+      <td>
+        <button (click)="delete(todo.id)">elimina</button>
+
+
+      </td>
+    </tr>
+  </table>
+
+  <form (ngSubmit)="addTodos()">
+    <input [(ngModel)]="todoAggiunto.title" name="title" type="text" placeholder="crea todo">
+
+    <button type="submit">+</button>
+  </form>
+
+</body>
+
+
+
+
