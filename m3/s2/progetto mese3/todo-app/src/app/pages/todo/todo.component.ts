@@ -20,6 +20,7 @@ export class TodoComponent implements OnInit{
   ngOnInit(){
     this.todosSvc.getTodos().then(todoRes =>{
       this.todoArray = todoRes
+      this.loading = false
     })
 
 

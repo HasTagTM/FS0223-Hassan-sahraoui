@@ -4,26 +4,25 @@
   <table>
     <tr *ngFor="let todo of todoArray">
       <td>
-
+        <span [ngClass]="{'completed': todo.completed, 'incomplete': !todo.completed}">
           {{ todo.title }}
-
+        </span>
       </td>
-
+      <td>
+        <input type="checkbox" [(ngModel)]="todo.completed" [disabled]="loading">
+      </td>
       <td>
         <button (click)="delete(todo.id)">elimina</button>
-
-
       </td>
     </tr>
   </table>
 
   <form (ngSubmit)="addTodos()">
     <input [(ngModel)]="todoAggiunto.title" name="title" type="text" placeholder="crea todo">
-
     <button type="submit">+</button>
   </form>
-
 </body>
+
 
 
 
