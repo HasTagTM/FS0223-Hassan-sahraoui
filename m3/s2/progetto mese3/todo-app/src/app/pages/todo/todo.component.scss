@@ -1,11 +1,15 @@
 body{
+  margin: 0;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://img.welovesolo.com/wp-content/image/vector4/Light-color-tech-background-vector32.jpg);
 
+  background-size: cover;
 }
 td{
   padding: 20px;

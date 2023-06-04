@@ -24,6 +24,11 @@
       "title": "CSS",
       "completed": true,
       "id": 5
+    },
+    {
+      "title": "React",
+      "completed": true,
+      "id": 6
     }
   ]
 }
