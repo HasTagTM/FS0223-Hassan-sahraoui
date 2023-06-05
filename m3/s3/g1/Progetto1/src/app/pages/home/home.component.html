@@ -1,0 +1,11 @@
+
+<div class="card" style="width: 18rem;" *ngFor="let photo of photoArray">
+  <img [src]="photo.url" class="card-img-top" alt="photo">
+  <div class="card-body">
+    <h5 class="card-title">{{photo.title}}</h5>
+    <img [src]="photo.thumbnailUrl" class="card-img-top" alt="photo">
+    <a href="#" (click)="addPhoto(photo)" class="btn btn-primary">Aggiungi Foto</a>
+    <a href="#" (click)="delete(photo.id)" class="btn btn-danger">Elimina Foto</a>
+    <a href="#" class="btn btn-primary">Dettaglio Foto</a>
+  </div>
+</div>
