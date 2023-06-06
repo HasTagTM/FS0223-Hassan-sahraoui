@@ -1,0 +1,51 @@
+
+<div class="container">
+
+    <div class="form-row">
+      <form (ngSubmit)="submit(f)" class="d-flex flex-column justify-content-center w-100" #f="ngForm">
+        <div>
+          <p class="mb-0 mt-3">Nome</p>
+          <input required ngModel type="text" class="form-control" #nomes="ngModel" name="input">
+          <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
+        </div>
+        <div>
+          <p class="mb-0 mt-3">Alter Ego</p>
+          <input required ngModel type="text" #nomes="ngModel" class="form-control" name="input">
+          <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
+        </div>
+
+        <div>
+          <p class="mb-0 mt-3">Super Potere</p>
+          <input ngModel type="text" class="form-control" name="input">
+        </div>
+        <div>
+          <P class="mb-0 mt-3">Nemico</P>
+          <input ngModel type="text" class="form-control" name="input">
+        </div>
+        <div>
+          <P class="mb-0 mt-3">Pianeta</P>
+          <input ngModel type="text" class="form-control" name="input">
+        </div>
+
+        <div class="mb-0 mt-3">
+
+          <select name="Pianeti" class="form-control">
+            <option value="">--Galassie--</option>
+            <option value="">Andromea</option>
+            <option value="">Via Lattea</option>
+            <option value="">Nana del Boote</option>
+          </select>
+          <span></span>
+        </div>
+        <div>
+          <p class="mb-0 mt-3">Debolezza</p>
+          <input ngModel type="text" class="form-control" name="nome">
+        </div>
+
+        <button [disabled]="f.invalid" class="btn btn-success mt-3">Crea</button>
+      </form>
+
+    </div>
+</div>
+
+
