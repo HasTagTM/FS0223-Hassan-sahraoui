@@ -22,11 +22,14 @@ export class RegisterComponent implements OnInit{
     const password = form.value.password
     console.log(email , password);
     form.reset();
-    this.authService.signUp({email:email, password:password, returnSecureToken:true}).subscribe(data =>{
-      console.log(data);
+
+    this.authService.signUp({password:password, email:email, returnSecureToken:true}).subscribe((data) =>{
+      const token = data
+      console.log(token);
+
 
     })
-    form.reset();
+
   }
 
 }

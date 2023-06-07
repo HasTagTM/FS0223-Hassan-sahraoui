@@ -4,7 +4,7 @@
     <form (ngSubmit)="onsubmit(f)" class="d-flex flex-column justify-content-center w-100" #f="ngForm">
       <div>
 
-        <input required ngModel type="email" class="form-control" #nomes="ngModel" name="input" placeholder="email">
+        <input required ngModel type="email" class="form-control" #nomes="ngModel" name="email" placeholder="email">
         <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
       </div>
       <div>
@@ -20,3 +20,4 @@
 
   </div>
 </div>
+
