@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="form-row">
+    <form (ngSubmit)="onsubmit(f)" class="d-flex flex-column justify-content-center w-100" #f="ngForm">
+      <div>
+
+        <input required ngModel type="email" class="form-control" #nomes="ngModel" name="input" placeholder="email">
+        <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
+      </div>
+      <div>
+
+        <input required ngModel type="password" #nomes="ngModel" class="form-control" name="password" placeholder="password">
+        <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
+      </div>
+
+
+
+      <button type="submit" [disabled]="f.invalid" class="btn btn-success mt-3">Crea</button>
+    </form>
+
+  </div>
+</div>

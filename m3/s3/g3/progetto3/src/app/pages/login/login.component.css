@@ -1,0 +1,7 @@
+.ng-invalid.ng-untouched{
+  border-color: red;
+}
+span{
+
+  background-color: rgb(219, 133, 133);
+}
