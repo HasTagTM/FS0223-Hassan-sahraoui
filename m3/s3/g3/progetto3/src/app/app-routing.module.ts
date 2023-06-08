@@ -13,7 +13,9 @@ const routes: Routes = [
   {
     path: 'log-in',
     component: LoginComponent
-  }
+  },
+
+  { path: 'customers', loadChildren: () => import('./customes/customes.module').then(m => m.CustomesModule) }
 ];
 
 @NgModule({
