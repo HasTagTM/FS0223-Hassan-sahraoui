@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RegisterData } from '../intefaces/register-data';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-register',
@@ -15,7 +16,12 @@ export class RegisterComponent {
       surname: ''
     }
 
-    register(){
+    constructor(private authSvc:AuthService){
 
+    }
+    register(){
+      this.authSvc.signUp(this.data).subscribe(accessData => {
+        alert(accessData.user.name)
+      })
     }
 }

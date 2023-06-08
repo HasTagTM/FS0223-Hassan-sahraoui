@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IloginData } from '../intefaces/ilogin-data';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,14 @@ export class LoginComponent {
     password: ''
   }
 
-  login(){
+  constructor(private authSvc: AuthService){
 
+  }
+  data:IloginData = {email:'', password: ''}
+
+  login(){
+    this.authSvc.login(this.data).subscribe(accessData => {
+      alert(`sei loggato come ${accessData.user.name}`)
+    })
   }
 }
