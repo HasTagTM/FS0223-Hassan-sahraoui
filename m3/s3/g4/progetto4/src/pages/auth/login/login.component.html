@@ -1,23 +1,28 @@
 
 
 
-<main class="form-signin w-100 m-auto">
-<form>
-  <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-  <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+<main class="form-signin m-auto">
+  <button class="m-4 btn btn-primary" [routerLink]="['/']">HOME</button>
+  <div class="container w-100">
+<form (ngSubmit)="login()"  #f="ngForm" class="w-50 text-center">
 
-  <div class="form-floating">
-    <input [(ngModel)]="data.email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <h2 class="mb-3 fw-bold pt-5">Please sign in</h2>
+
+  <div class="form-floating mb-2">
+    <input [(ngModel)]="data.email" #nomes="ngModel" ngModel type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
     <label for="floatingInput">Email address</label>
+    <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
   </div>
   <div class="form-floating">
-    <input [(ngModel)]="data.password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <input [(ngModel)]="data.password" #nomes="ngModel" ngModel type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
     <label for="floatingPassword">password</label>
+    <span *ngIf="nomes.invalid && nomes.touched">Campo obbligatorio</span>
   </div>
 
 
-  <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+  <button [disabled]="f.invalid" class="btn btn-primary w-100 py-2" [routerLink]="['/dashboard']">Sign in</button>
   <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
 </form>
+</div>
 </main>
 

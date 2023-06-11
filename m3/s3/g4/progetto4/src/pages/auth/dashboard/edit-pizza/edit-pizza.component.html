@@ -1,0 +1,32 @@
+
+<body>
+
+
+<main class="form-signin m-auto">
+
+  <button class="m-4 btn btn-primary" [routerLink]="['/']">HOME</button>
+  <div class="container w-100">
+<form class="w-50 text-center">
+  <h2 class="pt-5 fw-bold">MODIFICA LA TUA PIZZA!</h2>
+  <div class="m-2 text-light">
+
+  <input #nomes="ngModel" #update="ngModel" ngModel id="gusto" type="text" class="form-control" name="gusto" [(ngModel)]="pizza.gusto">
+  <span *ngIf="update.invalid && nomes.touched">Campo obbligatorio</span>
+</div >
+<div class="m-2 text-light">
+
+<input #update="ngModel" ngModel id="prezzo" type="number" class="form-control" name="prezzo" [(ngModel)]="pizza.prezzo">
+<span *ngIf="update.invalid && nomes.touched">Campo obbligatorio</span>
+</div>
+<div class="m-2 text-light">
+  <input #nomes="ngModel" ngModel placeholder="ingredienti" id="ingredienti" type="text" class="form-control" name="ingredienti" [(ngModel)]="pizza.ingredienti">
+</div>
+<div class="m-2 text-light">
+  <input #nomes="ngModel" ngModel id="aggiunte" placeholder="es. doppia-pasta, mozzarella di bufala ecc." type="text" class="form-control" name="aggiunte" [(ngModel)]="pizza.aggiunte">
+</div>
+  <button class="btn btn-primary m-2" (click)="edit()">Modifica Pizza</button>
+</form>
+
+</div>
+</main>
+</body>

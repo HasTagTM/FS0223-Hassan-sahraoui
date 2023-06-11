@@ -1,0 +1,65 @@
+<main>
+  <button class="m-4 btn btn-primary" [routerLink]="['/']">HOME</button>
+<div class="container">
+<h2 class="pt-3 fw-bold fs-2em text-light">CREA UNA NUOVA PIZZA!</h2>
+<form>
+  <div class="m-2 text-light">
+  <label for="gusto" class="fw-bold">inserisci il tuo Gusto</label>
+
+
+  <input id="gusto" type="text" class="form-control" name="gusto" [(ngModel)]="newPizza.gusto">
+</div >
+<div class="m-2 text-light">
+  <label for="prezzo" class="fw-bold">inserisci il tuo Prezzo</label>
+
+
+  <input id="prezzo" type="number" class="form-control" name="prezzo" [(ngModel)]="newPizza.prezzo">
+</div>
+<div class="m-2 text-light">
+  <label for="ingredienti" class="fw-bold">inserisci gli ingredienti</label>
+
+
+  <input id="ingredienti" type="text" class="form-control" name="ingredienti" [(ngModel)]="newPizza.ingredienti">
+</div>
+<div class="m-2 text-light">
+  <label for="aggiunte" class="fw-bold">inserisci eventuali aggiunte</label>
+  <input id="aggiunte" placeholder="es. doppia-pasta, mozzarella di bufala ecc." type="text" class="form-control" name="aggiunte" [(ngModel)]="newPizza.aggiunte">
+</div>
+  <button class="btn btn-primary m-2" (click)="create()">Aggiungi pizza</button>
+</form>
+
+<div>
+<h3 class="pt-3 fw-bold fs-2em text-light">PIZZE DISPONIBILI</h3>
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th>Gusto</th>
+      <th>Prezzo</th>
+      <th>Ingredienti</th>
+      <th>Aggiunte</th>
+      <th>Opzioni</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let pizza of pizze">
+
+    <td>{{pizza.gusto}}</td>
+    <td>{{pizza.prezzo}} €</td>
+    <td>{{pizza.ingredienti}}</td>
+    <td>{{pizza.aggiunte}}</td>
+    <td>
+      <button class="btn btn-warning m-2" [routerLink]="['/dashboard','edit',pizza.id]">Modifica</button>
+      <button class="btn btn-danger m-2" (click)="delete(pizza.id)">Elimina</button>
+    </td>
+  </tr>
+</tbody>
+<tfoot class="fw-bold mt-3 w-100">
+  <tr>
+    <td>Il totale delle Pizze nel Menù è {{pizze.length}}</td>
+  </tr>
+</tfoot>
+</table>
+
+</div>
+</div>
+</main>

@@ -1,3 +1,40 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "ciao_ciao@gmail.com",
+      "password": "$2a$10$v7BIJ6wRyrZsx0QF4GxqbOQUBo7ooEmiKJH.3aegCuIuJ0oQSOMjC",
+      "name": "luca",
+      "surname": "rossi",
+      "id": 1
+    },
+    {
+      "email": "fatima@italia@gmail.it",
+      "password": "$2a$10$dnpf28kVpVSU2JSu5HTzU.fY09WPCqT1NGgN.9WZJRFesgM4zDtSi",
+      "name": "fatima",
+      "surname": "roy",
+      "id": 2
+    }
+  ],
+  "pizze": [
+    {
+      "id": 1,
+      "gusto": "Margherita",
+      "prezzo": 5,
+      "ingredienti": "pomodoro, mozzarella, origano"
+    },
+    {
+      "gusto": "capricciosa",
+      "prezzo": 9,
+      "ingredienti": "fior di latte, carciofini alla brace, olive taggiasche, funghi",
+      "aggiunte": "doppia-pasta",
+      "id": 2
+    },
+    {
+      "gusto": "Speciale",
+      "prezzo": 5,
+      "ingredienti": "mozzarella di bufala, pomodorini freschi",
+      "aggiunte": "tirata",
+      "id": 3
+    }
+  ]
 }
